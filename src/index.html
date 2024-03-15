@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Reader</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.21.1"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>QR Code Scanner</h1>
+    
+        <a id="btn-scan-qr">
+            <img src="../img/qr-code.png" alt="QR" style="background-color: transparent;">
+            <span>Click to scan QR Code</span>
+        </a>
+        
+        <canvas hidden="" id="qr-canvas"></canvas>
+    
+        <div id="qr-result" hidden="">
+            <b>Data:</b> <span id="outputData"></span>
+        </div>
+    </div>
+    
+    <script src="./src/qrCodeScanner.js"></script>
+</body>
+</html>
